@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameWorld</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="top center">
+        <div class="top__content">
+            <h1 class="top__content__heading">Welcome to my site !</h1>
+            <p class="top__content__text">You have to go through several exciting games. If you're ready, press <b>go</b> & <b>get started</b></p>
+        </div>
+        <div class="top__button">
+            <button>Lets go!</button>
+        </div>
+
+        <script></script>
+    </header>
+
+    <div class="games">
+        <div class="games__content center">
+            <div><a class="games__content_item" href="#"> <img class="games__content_img_mobile games__content_item_img " src="./img/game1.png" alt="Game 1"> <span class="games__content_item__text">Game 1</span> </a></div>
+
+            <div><a class="games__content_item" href="#"> <img class="games__content_img_mobile games__content_item_img" src="./img/game2.png" alt="Game 2"> <span class="games__content_item__text">Game 2</span> </a></div>
+
+            <div><a class="games__content_item" href="#"> <img class="games__content_img_mobile games__content_item_img" src="./img/game3.png" alt="Game3"> <span class="games__content_item__text">Game 3
+            </span> </a></div>
+        </div>
+    </div>
+
+    <div class="seasons center">
+        <div>
+            <div class="seasons__content">
+                <h2 class="seasons__content__text_top">Seasons!</h2>
+                <p class="seasons__content__text">Click the play button, enter the month number (from 1 to 12) and you will find out what time of year it belongs to</p>
+            </div>
+            <div class="top__button">
+                <button onclick="gameFirst();">Play!</button>
+            </div>
+        </div>
+
+        <div class="seasons__content_img_style">
+            <img class="seasons__content__img" src="./img/people.svg" alt="people__seasons">
+            <img class="seasons__content__img_mobile" src="./img/people_phone.svg" alt="people__seasons_mobile">
+        </div>
+
+    </div>
+
+   <div class="seasons center">
+        <div class="seasons words_order_mob1 center">
+
+            <div class="seasons__content_img_style">
+                <img class="seasons__content__img" src="./img/wordsPoeople.svg" alt="people__seasons">
+                <img class="seasons__content__img_mobile" src="./img/wordsPeopleMobile.svg" alt="people__seasons_mobile">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="seasons__content words_order_mob2">
+                <h2 class="seasons__content__text_top">Remember the words </h2>
+                <p class="seasons__content__text">When you click on the play button, you will see a few words that you need to remember.</p>
+            </div>
+            <div class="top__button">
+                <button onclick="gameSecond();">Paly!</button>
+            </div>
+        </div>
+   </div>
+
+   <div class="mystery center">
+    <div class="mystery__content">
+        <h2 class="mystery__content__text__top">A game of riddles </h2>
+        <p class="mystery__content__text__content">The computer makes a riddle, you need to guess it, if you give the wrong answer, the computer will give you a hint. You will have three attempts and two hints.</p>
+    </div>
+    <div class="top__button button__mystery">
+        <button onclick="gameThird();">Play!</button>
+    </div>
+   </div>
+    <script src="./script.js"></script>
+</body>
+</html>

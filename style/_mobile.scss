@@ -1,0 +1,150 @@
+@media(max-width: 767px){
+
+    .center{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .top{
+        height: 735px;
+        
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &__heading{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: $color-text;
+                margin-top: 238px;
+                width: 343px;
+                margin-bottom: 32px;
+            }
+
+            &__text{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                color: $color-text;
+                width: 343px;
+                text-align: center;
+            }
+        }
+    }
+
+    .top__button{
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .games{
+        height:1221px;
+        display: flex;
+        justify-content: center;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: $gap;
+
+            &_img_mobile{
+                width: 343px;
+                height: 300px;
+                top: 863px;
+                gap: $gap;
+            }
+
+            &_item__text{
+                height: 31.64px;
+                left: 14px;
+            }
+        }
+    }
+
+    .seasons{
+        height: 636px;
+        background-image: url(../img/backgroundphoneseasons.jpg);
+        display: flex;
+        flex-direction: column;
+
+        &__content{
+            margin-top: 51px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__text_top{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+
+            }
+
+            &__text{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                width: 343px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            &_img_style{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            
+            &__img{
+                display: none;
+            }
+
+            &__img_mobile{
+                width: 344px;
+                height: 236px;
+                display: block;
+                margin-top: 64px;
+            }
+        }
+    }
+}
+
+.words_order_mob1{
+    order: 2;
+}
+
+.words_order_mob2{
+    order: 1;
+}
+
+
+.mystery{
+    height: 800px;
+    
+    .mystery__content{
+        padding-top: 52px;
+    }
+
+
+    &__content__text__top{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+}

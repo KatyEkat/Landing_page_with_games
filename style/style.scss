@@ -1,0 +1,228 @@
+@import 'vars';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Montserrat';
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top{
+    height: 1024px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        &__heading{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78px;
+            display: flex;
+            align-items: center;
+            color: $color-text;
+            margin-top: 217px;
+            width: 789px;
+            margin-bottom: 32px;
+        }
+
+        &__text{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: $color-text;
+            width: 482px;            
+        }
+
+    }
+
+}
+
+button{
+    width: 234px;
+    height: 49px;
+    border: 1px solid $color-top-button;
+    background-color: $color-top-button;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-text;
+    transition: all $transition;
+}
+
+button:hover{
+    background-color: $button-hover;
+    cursor: default;
+    cursor: url("../img/hover-forMouse.svg"), pointer;
+}
+
+
+.top__button{
+    margin-top: 44px;
+}
+
+.games{
+    height: 556px;
+    background-image: url(../img/centerbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    &__content{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: $gap;
+        
+
+        &_item{
+            position: relative;
+            
+            &__text{
+                position: absolute;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                display: flex;
+                align-items: center;
+                color: $color-text;
+                height: 31.64px;
+                left: 32px;
+                bottom: 32px;
+            }
+
+            &_img{
+                border: 3px solid transparent;
+            }
+        }
+    }
+}
+
+
+.games__content_item_img:hover{
+    border: 3px solid #44D2FF;
+    border-radius: 16px;
+    background-color: $button-hover;
+    cursor: default;
+    cursor: url("../img/hover-forMouse.svg"), pointer;
+}
+
+
+.seasons{
+    height: 800px;
+    background-image: url(../img/bgseasons.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    &__content{
+        margin-top: 282px;
+
+        &__text_top{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            display: flex;
+            align-items: center;
+            color: $color-text;
+            margin-bottom: $gap;
+            
+        }
+
+        &__text{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            color: $color-text;
+            width: 584px;
+        }
+
+        &__img{
+            display: block;
+        }
+
+        &_img_style{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.seasons__content__img_mobile{
+    display: none;
+}
+
+
+.mystery{
+    height: 800px;
+    background-image: url(../img/backgroundMystery.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .mystery__content{
+        padding-top: 277px;
+        
+
+        &__text__top{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: $color-text;
+            text-align: center;
+            margin-bottom: $gap;
+            
+        }
+    
+        &__text__content{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: $color-text;
+            text-align: center;
+            margin-bottom: $gap;
+    
+        }
+    }
+
+}
+
+.button__mystery{
+    display: flex;
+    justify-content: center;
+}
+
+
+@import 'mobile';
+
+
+
